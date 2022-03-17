@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;500&family=Roboto+Condensed&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	background: rgba(105, 117, 145, 0.3);
+	overflow-x: hidden;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1{
+	color: white;
+	font-family: 'Raleway', cursive;
+	padding-top: 5rem;
+}
+
+h2{
+	color: rgb(0, 0, 0);
+	font-family: 'Raleway', cursive;
+	font-size: 2.3rem;
+	margin-top: 1rem;
+	}
+
+h3;h4{
+	color: rgb(0, 0, 0);
+	font-family: 'Roboto', cursive;
+}
+
+.contenedor{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "header" "main" "footer";
+}
+
+#header{
+	grid-area: header;
+}
+
+#main{
+	grid-area: main;
+}
+
+#footer{
+	grid-area: footer;
+}
+
+/*-----inicia encabezado Mobile-----*/
+
+.encabezado{
+	background-image: url(../img/contenedores2-1.jpg);
+	background-repeat: no-repeat;
+	background-size:auto;	
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}	
+
+ 	.encabezado nav{
+	background-color: rgba(168, 168,168, .6);
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+
+	.encabezado nav img{
+	 	width: 150px;
+		margin-bottom: 20px;
+		display: flex;
+		justify-items: center;
+	}
+
+	.encabezado nav ul{
+		width: 100%;
+		height: auto;
+		list-style: none;
+		color: rgba(255, 255, 255, 1.0);
+		font-family: 'Roboto', sans-serif;
+		display: flex;
+		flex-direction: column;	
+	}
+
+	.encabezado nav ul li{
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		list-style: none;
+		color: rgba(255, 255, 255, 1.0);
+		font-family: 'Roboto', sans-serif;
+
+	}
+
+	.encabezado nav ul li a{
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: rgba(255, 255, 255, 1.0);
+	}
+
+	.encabezado nav ul li a:hover{
+	color: rgb(42, 0, 177);
+	}
+
+	.encabezado div{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+
+	.encabezado div h1{
+		font-size: 2.5rem;
+	}
+
+	.encabezado div h4{
+		width: 90%;
+		background-color: rgba(40, 210, 246, 0.6);	
+		font-size: 1.8rem;
+		text-align: center;
+	}
+
+/*-----Fin de encabezado Mobile-----*/
+
+/*-----incia footer Mobile-----*/
+
+.pie{
+	background-color: rgba(43, 152, 247, 0.8);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: space-around;
+	margin-top: 1rem;
+}
+
+.pie div{
+	width: 100%;
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: space-around;
+}
+
+.pie div h3{
+	font-size: 1.9rem;
+	}
+
+.pie div h4{
+	font-size: 1.4rem;
+}
+
+.pie div div{
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+/*-----fin footer Mobile-----*/
+
+/*-----incia contenido principal nosotros Mobile-----*/
+
+.nosotros{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+	
+
+	.nosotros section{
+		width: 90%;
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.nosotros section article{
+	padding-top: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: space-around;
+	}
+
+	.nosotros section article img{
+		width: 90%;
+	}
+
+	.nosotros section article h3{
+		font-size: 2rem;
+	}
+
+	.nosotros section article p{
+		font-size: 1.5rem;
+
+	}
+
+
+
+/*-----fin contenido principal nosotros Mobile-----*/
+
+/*-----incia contenido principal servicios Mobile-----*/
+
+.servicios{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+	.servicios section{
+	 	width: 100%;
+	 	display: flex;
+	 	flex-direction: column;
+	 	align-items: center;
+ 	}
+
+ 	.servicios section article{
+ 		width: 100%;
+	 	display: flex;
+	 	flex-direction: column;
+	 	align-items: center;
+ 	}
+
+ 	.servicios section article div{
+ 		width: 90%;
+	 	display: flex;
+	 	flex-direction: column;
+	 	align-items: center;
+ 	}
+
+ 	.servicios section article div img{
+ 		width: 90%;
+ 		margin: 1rem;
+ 	}
+
+ 	.servicios section article div div img{
+ 		width: 90%;
+ 	}
+
+ 	.servicios section article div div p{
+ 		width: 90%;
+
+ 	}
+ /*-----fin contenido principal servicios Mobile-----*/
+
+
+@media (min-width: 768px){
+	.contenedor{
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas:"header" 
+		"main"
+		"footer"
+	}
+/*-----inicia encabezado-----*/
+	#header nav{
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+	#header nav a{
+		margin-left: 3rem;
+		margin-top: 1rem;
+	}
+
+	#header nav ul{
+		flex-direction: row;
+	}
+
+/*-----fin encabezado-----*/
+
+/*-----inicia footer-----*/
+
+#footer {
+	flex-direction: row;
+	align-items: center;
+	justify-items: space-around;
+	margin-top: 1rem;
+}
+
+@media (min-width: 1020px){
+	.contenedor{
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas:"header" 
+		"main"
+		"footer"
+	}
+
+	.nosotros section{
+		margin-top: 1rem;
+		flex-direction: row;
+		align-items: baseline;
+	}
+
+    .nosotros section article img{
+		width: 100%;
+	}
+
+	.nosotrosArt{
+		width: 25%;
+		padding-top: 1.5rem;
+	}
+
+	.servicios section article{
+		flex-direction: row;
+	}
+	
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
