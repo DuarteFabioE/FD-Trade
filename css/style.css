@@ -141,7 +141,8 @@ h3;h4{
 /*-----incia footer Mobile-----*/
 
 .pie{
-	background-color: rgba(43, 152, 247, 0.8);
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,105,121,1) 35%, rgba(0,212,255,1) 100%);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -214,12 +215,28 @@ h3;h4{
 
 	}
 
+/* ----------- main - animación ----------- */
+@keyframes mainAnimation{
+	0%{background-image: url(../img/nosotros1.jpg)}
+	33%{background-image: url(../img/nosotros2.jpeg)}
+	66%{background-image: url(../img/nosotros3.jpg)}
+	100%{background-image: url(../img/nosotros1.jpg)}
+}
+
+.slider_slide{
+	width: 100vw;
+	height: 50vh;
+	animation-name:mainAnimation;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	background-size: cover;
+}
 
 
-/*-----fin contenido principal nosotros Mobile-----*/
+
 
 /*-----incia contenido principal servicios Mobile-----*/
-
 .servicios{
 	width: 100%;
 	display: flex;
