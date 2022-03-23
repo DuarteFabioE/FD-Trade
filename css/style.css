@@ -565,7 +565,17 @@ padding-right: 2rem;
 }
 
 .incoterms{
-	width: 90rem;
-	width: 90rem;
+	width: 110rem;
+	width: 110rem;
 }
 
+.links{
+	width: 30rem;
+}
+
+.divLinks{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-items: space-around;
+}
